@@ -1,4 +1,4 @@
-# SelfContrast
+# Self-Contrastive-Learning
 
 This repository is the official implementation of **"Self-Contrastive Learning: An Efficient Supervised Contrastive Framework with Single-view and Sub-network"** in Pytorch.
 
