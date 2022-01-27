@@ -1,6 +1,6 @@
 # Self-Contrastive-Learning
 
-This repository is the official implementation of **"Self-Contrastive Learning: An Efficient Supervised Contrastive Framework with Single-view and Sub-network"** in Pytorch.
+This repository is the official PyTorch implementation of **"Self-Contrastive Learning: An Efficient Supervised Contrastive Framework with Single-view and Sub-network"**.
 
 ## Requirements
 
@@ -15,19 +15,21 @@ This repository is the official implementation of **"Self-Contrastive Learning: 
 
 ### Command
 
-- In `scripts` folder, we make one example for SelfCon-S loss on ResNet-18 experiment.
+```
+bash scripts/resnet_represent_selfcon.sh
+```
+    
+- In `./scripts` directory, we made one example for SelfCon-S loss on ResNet-18 experiment.
 - To train the other algorithms or architectures, change the appropriate argument referring to `parse_option()` in the main python files. 
-- For example, if you want to train with the multi-viewed batch, change the multiview argument to `True`.
+- For example, if you want to train with the multi-viewed batch, change the `--multiview` argument to `True`.
 
-    ```
-    bash scripts/resnet_represent_selfcon.sh
-    ```
 
 ## Reference Github
 
-    We refer to the following works:
-    - https://github.com/HobbitLong/SupContrast
-    - https://github.com/HobbitLong/RepDistiller
-    - https://github.com/facebookresearch/moco
-    - https://github.com/jiamings/ml-cpc
-    - https://github.com/UMBCvision/CompRess
+We refer to the following works:
+
+- https://github.com/HobbitLong/SupContrast
+- https://github.com/HobbitLong/RepDistiller
+- https://github.com/facebookresearch/moco
+- https://github.com/jiamings/ml-cpc
+- https://github.com/UMBCvision/CompRess
